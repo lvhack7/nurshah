@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'pushkin';
+  src: url('/path-to/pushkin.woff2') format('woff2'),
+       url('/path-to/pushkin.woff') format('woff'),
+       url('/path-to/pushkin.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'pushkin', sans-serif;
+}

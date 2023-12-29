@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap');
+
+
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-rock {
+    font-family: 'Rock Salt', cursive;
+}
+
+@font-face {
+    font-family: 'pushkin';
+    src: url('/assets/fonts/pushkin/pushkin.woff2') format('woff2'),
+         url('/assets/fonts/pushkin/pushkin.woff') format('woff'),
+         url('/assets/fonts/pushkin/pushkin.ttf')  format('truetype');
+}
+  
+.font-pushkin {
+    font-family: 'pushkin', sans-serif;
+}
+
+.bg-brand-text {
+    background-image: url("/assets/imgs/brand-text.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collection:hover {
+    cursor: pointer;
+}
+
+.collection:hover .name {
+    opacity: 1;
+} 
+
+.collection:hover img {
+    filter: brightness(50%);
+}
+
+#mobile-menu {
+    width: 100vw;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+
+.container-sm {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container-sm {
+        width: 760px;
+    }
+}
+@media (min-width: 992px) {
+    .container-sm {
+        width: 970px;
+    }
+}
+/* @media (min-width: 1200px) {
+    .container-sm {
+        width: 1170px;
+    }
+} */

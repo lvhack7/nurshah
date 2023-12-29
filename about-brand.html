@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бренд</title>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="fixed top-0 left-0 bg-white w-full z-30 shadow-sm w-full">
+        <nav class="container-sm flex justify-between md:flex-col items-center md:justify-center py-4 md:py-0">
+            <div class="hidden md:flex justify-end w-full border-b border-gray-400 py-2">
+                <div class="flex items-center space-x-1">
+                    <a class="text-sm font-mont underline text-gray-700 hover:text-blue-800 hover:cursor-pointer">RU</a>
+                    <span class="text-sm text-gray-700">/</span>
+                    <a class="text-sm font-mont underline text-gray-700 hover:text-blue-800 hover:cursor-pointer">EN</a>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center py-4">
+                <div class="flex items-center space-x-10">
+                    <a href="/collection.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Коллекции</a>
+                    <div class="relative">
+                        <div id="dropdown" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">О компании</div>
+                        <div id="content" class="hidden absolute top-8 w-48 bg-white rounded-[10px] shadow z-20 px-4 py-3">
+                            <div class="flex flex-col space-y-3">
+                                <a href="/about-brand.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Бренд</a>
+                                <a href="/about-designer.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Дизайнер</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/index.html" class="font-mont text-gray-800 text-2xl hover:cursor-pointer px-4 font-semibold">
+                        NURSHAH
+                    </a>
+                    <a href="/pret-a-porter.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                    <a href="/contact.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Контакты</a>
+                </div>
+            </div>
+            <a href="/index.html" class="md:hidden font-mont text-gray-800 text-2xl hover:cursor-pointer font-semibold">
+                NURSHAH
+            </a>
+            <div class="md:hidden flex flex-col space-y-[5px] rotate-180 hover:cursor-pointer" onclick="toggleMenu()">
+                <div class="w-12 h-[2px] bg-gray-500"></div>
+                <div class="w-8 h-[2px] bg-gray-500"></div>
+                <div class="w-12 h-[2px] bg-gray-500"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="pb-10 md:pb-20">
+        <div class="py-10">
+            <div class="container-sm">
+                <div class="text-gray-500 font-mont">О компании / Бренд</div>
+            </div>
+            <div class="relative mt-4">
+                <video id="myVideo" class="w-full brightness-50 object-cover md:aspect-video" muted autoplay>
+                    <source src="./assets/videos/brand.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute top-1/3 flex flex-col items-center justify-center w-full z-20">
+                    <div class="text-white uppercase font-mont text-center text-4xl lg:text-5xl">
+                        A radical <span class="font-rock">new</span> lifestyle brand
+                    </div>
+                    <div class="text-center max-w-[600px] px-4 md:text-xl mt-10 font-mont text-white">
+                        «NUR SHAH» – это изысканный симбиоз казахских традиций и современных модных тенденций
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm py-10">
+            <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-8">
+                <div class="flex flex-col space-y-8">
+                    <div class="font-pushkin text-4xl">С чего началась история</div>
+                    <p class="font-mont text-gray-600 text-sm">
+                        На сегодняшний день, «NUR SHAH» является крупнейшим Модным Домом Казахстана. Он был основан в 2001 году казахстанским дизайнером Нуржамал Нурпейсовой. История его создания началась с маленького ателье в однокомнатной квартире, города Актау. Однако очень быстро, одежда этого бренда покорила тысячи сердец, став лидером на отечественном рынке
+                    </p>
+                    <p class="font-mont text-gray-600 text-sm">
+                        Нуржамал Нурпейсова произвела настоящую революцию в индустрии. Она превратила национальную одежду в тренд, который захотели носить не только в Казахстане, но и в странах Ближнего и Дальнего Зарубежья
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="./assets/imgs/history-brand.png" >
+                    <div class="absolute h-[200px] -bottom-10 -right-3 w-[2px] bg-gray-400"></div>
+                    <div class="absolute h-[2px] -bottom-6 right-2 w-[250px] bg-gray-400"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-sm pt-10">
+            <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-8">
+                <div class="order-1 md:order-2 flex flex-col space-y-8">
+                    <div class="font-pushkin text-5xl">Днк бренда</div>
+                    <p class="font-mont text-gray-600 text-sm">
+                        ДНК бренда «NUR SHAH» – это изысканный симбиоз казахских традиций и современных модных тенденций, помноженный на роскошь ручной вышивки, качественных и дорогих тканей и безупречного авторского дизайна
+                    </p>
+                    <p class="font-mont text-gray-600 text-sm">
+                        Вместе с тем, Модный Дом постоянно развивается и предлагает покупателям дополнительную линию одежды «pret-a-porter», для повседневной жизни, в более доступном ценовом сегменте
+                    </p>
+                </div>
+                <img class="order-2 md:order-1" src="./assets/imgs/brand-dna.png" >
+            </div>
+        </div>
+        <div class="w-full py-20">
+            <div class="relative">
+                <img src="/assets/imgs/brand-video.png" class="hidden md:block w-full" >
+                <img src="/assets/imgs/brand-video-mob.png" class="md:hidden w-full" >
+                <a href="https://www.youtube.com/watch?v=8XEyTpqK1PQ" class="play-btn absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center cursor-pointer hover:scale-105">
+                    <img src="./assets/icons/play.svg" >
+                </a>
+            </div>
+        </div>
+        <div class="container-sm py-10">
+            <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-8">
+                <div class="flex flex-col space-y-8">
+                    <div class="font-pushkin text-4xl leading-loose">Представляем культуру по всему миру</div>
+                    <p class="font-mont text-gray-600 text-sm">
+                        Много лет, «NUR SHAH» активно участвует во всевозможных выставках и показах; с честью представляя культуру и искусство Казахстана на Неделях Моды: в Нью-Йорке, Шанхае, Дубай и многих других странах. А также, регулярно выпускает сезонные коллекции в рамках «Tengrii Fashion Week»
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="./assets/imgs/brand-culture.png" >
+                   
+                </div>
+
+            </div>
+        </div>
+        <div class="container-sm py-10">
+            <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-8">
+                <div class="order-1 md:order-2 flex flex-col space-y-8">
+                    <div class="font-pushkin text-5xl">Пресса</div>
+                    <p class="font-mont text-gray-600 text-sm">
+                        На протяжении многих лет публикации о бренде «NUR SHAH» и о дизайнере Нуржамал Нурпейсовой регулярно появляются в СМИ, на интернет порталах, в различных известных глянцевых и деловых журналах: «VINTAGE», «La ficel», «Damu» и др. Критики неизменно восхищаются успехами казахстанского бренда и пророчат ему блестящее будущее.
+                    </p>
+                    
+                </div>
+                <div class="order-2 md:order-1 relative">
+                    <img src="./assets/imgs/brand-press.png" >
+                    <div class="absolute h-[200px] -bottom-10 -right-3 w-[2px] bg-gray-400"></div>
+                    <div class="absolute h-[2px] -bottom-6 right-2 w-[250px] bg-gray-400"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-brand-text mt-20">
+            <div class="container-sm py-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <p class="font-mont text-white">Бренд «NUR SHAH», всегда стремился к уникальности и особенное внимание уделял качественным и эстетическим характеристикам материалов. Наши женственные, изысканные платья и костюмы украшают: авторские принты, роскошная вышивка, россыпи страз и роскошной фурнитуры</p>
+                    <p class="font-mont text-white">«NUR-SHAH» очень бережно относится к традициям. Издревле в замысловатой вязи орнаментов, переплетались отношение казахского народа к окружающей действительности, магические и эстетические стороны национальной культуры</p>
+                </div>
+            </div>
+        </div>
+        <div class="py-10 md:py-20">
+            <div class="container-sm flex flex-col space-y-8">
+                <p class="font-mont max-w-2xl">
+                    Потому вышивка для нас — это целый культ и, конечно, визитная карточка нашего бренда. Наши вышивальщицы обладают высочайшим мастерством. В каждый стежок они вкладывают массу труда и огромную любовь
+                </p>
+                <p class="font-mont max-w-2xl">
+                    Есть еще одна важная особенность одежды от «NUR SHAH». В течение 7 лет, мы создаем ткани с уникальными авторскими принтами, которые разрабатывают наши лучшие художники. Дизайнерские узоры являются украшением всех коллекций, подчеркивая индивидуальность и самобытность нарядов. Для принтов мы используем авторские стилизации традиционных казахских орнаментов, в сочетании с различными элементами декоративного искусства стран Ближнего и Дальнего Востока
+                </p>
+                <p class="font-pushkin text-3xl max-w-2xl">
+                    Для нас узоры на ткани — это не просто орнаменты – это целая история, которую мы хотим подарить всем ценителям прекрасного!
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-black py-8">
+        <div class="container-sm">
+            <div class="flex flex-wrap items-start justify-between">
+                <div>
+                    <a class="font-mont text-2xl text-white">NURSHAH</a>
+                    <div class="md:hidden flex flex-col items-start space-y-3 py-2 mt-4">
+                        <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Коллекции</a>
+                        <div class="relative">
+                            <div id="dropdown-mob" class="font-mont text-sm text-gray-100 hover:underline hover:cursor-pointer">О компании</div>
+                            <div id="content-mob" class="hidden absolute top-6 w-32 bg-white rounded-[10px] shadow z-20 px-4 py-3">
+                                <div class="flex flex-col space-y-3">
+                                    <a href="/about-brand.html" class="font-mont text-gray-600 text-sm hover:underline hover:cursor-pointer">Бренд</a>
+                                    <a href="/about-designer.html" class="font-mont text-gray-600 text-sm hover:underline hover:cursor-pointer">Дизайнер</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                        <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Контакты</a>
+                    </div>
+                </div>
+               
+                <div class="hidden md:flex items-center space-x-10 py-2">
+                    <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Коллекции</a>
+                    <div class="relative">
+                        <div id="dropdown-footer" class="font-mont text-sm text-gray-100 hover:underline hover:cursor-pointer">О компании</div>
+                        <div id="content-footer" class="hidden absolute top-4 w-48 bg-transparent rounded-[10px] shadow z-20 py-3">
+                            <div class="flex flex-col space-y-3">
+                                <a href="/about-brand.html" class="font-mont text-gray-100 text-xs hover:underline hover:cursor-pointer">Бренд</a>
+                                <a href="/about-designer.html" class="font-mont text-gray-100 text-xs hover:underline hover:cursor-pointer">Дизайнер</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                    <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Контакты</a>
+                </div>
+                <div class="flex flex-col space-y-3 items-end py-2">
+                    <a class="text-gray-200 text-sm font-mont" href="mailto:nur-shah@mail.ru">nur-shah@mail.ru</a>
+                    <a class="text-gray-200 text-sm font-mont" href="tel:+77775995477">+7 777 599 54 77</a>
+                    <div class="flex items-center space-x-3">
+                        <a>
+                            <img src="./assets/icons/instagram.svg" width="20">
+                        </a>
+                        <a>
+                            <img src="./assets/icons/whatsapp.svg" width="20">
+                        </a>
+                        <a>
+                            <img src="./assets/icons/telegram.svg" width="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="mobile-menu" class="absolute z-30 top-0 left-0 bg-white">
+        <div class="flex flex-col space-y-4 container-sm relative h-full">
+            <div class="flex items-center justify-between py-8">
+                <a href="/index.html" class="font-mont text-gray-800 text-2xl hover:cursor-pointer font-semibold">
+                    NURSHAH
+                </a>
+                <button onclick="toggleMenu()">
+                    <img src="/assets/icons/close.svg" width="40">
+                </button>
+            </div>
+            
+            <div class="py-4">
+                <div class="flex flex-col space-y-8">
+                    <a href="/collection.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Коллекции</a>
+                    <div class="relative">
+                        <div id="dropdown-menu" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">О компании</div>
+                        <div id="content-menu" class="hidden absolute top-8 w-48 bg-white rounded-[10px] shadow z-20 px-4 py-3">
+                            <div class="flex flex-col space-y-3">
+                                <a href="/about-brand.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Бренд</a>
+                                <a href="/about-designer.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Дизайнер</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/pret-a-porter.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                    <a href="/contact.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Контакты</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3 justify-end py-2 mt-auto">
+                <a class="text-gray-700 text-sm font-mont" href="mailto:nur-shah@mail.ru">nur-shah@mail.ru</a>
+                <a class="text-gray-700 text-sm font-mont" href="tel:+77775995477">+7 777 599 54 77</a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

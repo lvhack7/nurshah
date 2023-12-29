@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллекция Осен/Зима</title>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="fixed top-0 left-0 bg-white w-full z-30 shadow-sm w-full">
+        <nav class="container-sm flex justify-between md:flex-col items-center md:justify-center py-4 md:py-0">
+            <div class="hidden md:flex justify-end w-full border-b border-gray-400 py-2">
+                <div class="flex items-center space-x-1">
+                    <a class="text-sm font-mont underline text-gray-700 hover:text-blue-800 hover:cursor-pointer">RU</a>
+                    <span class="text-sm text-gray-700">/</span>
+                    <a class="text-sm font-mont underline text-gray-700 hover:text-blue-800 hover:cursor-pointer">EN</a>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center py-4">
+                <div class="flex items-center space-x-10">
+                    <a href="/collection.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Коллекции</a>
+                    <div class="relative">
+                        <div id="dropdown" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">О компании</div>
+                        <div id="content" class="hidden absolute top-8 w-48 bg-white rounded-[10px] shadow z-20 px-4 py-3">
+                            <div class="flex flex-col space-y-3">
+                                <a href="/about-brand.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Бренд</a>
+                                <a href="/about-designer.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Дизайнер</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/index.html" class="font-mont text-gray-800 text-2xl hover:cursor-pointer px-4 font-semibold">
+                        NURSHAH
+                    </a>
+                    <a href="/pret-a-porter.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                    <a href="/contact.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Контакты</a>
+                </div>
+            </div>
+            <a href="/index.html" class="md:hidden font-mont text-gray-800 text-2xl hover:cursor-pointer font-semibold">
+                NURSHAH
+            </a>
+            <div class="md:hidden flex flex-col space-y-[5px] rotate-180 hover:cursor-pointer" onclick="toggleMenu()">
+                <div class="w-12 h-[2px] bg-gray-500"></div>
+                <div class="w-8 h-[2px] bg-gray-500"></div>
+                <div class="w-12 h-[2px] bg-gray-500"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-10 pb-20">
+        <div class="relative">
+            <img src="/assets/imgs/collection/autumn-winter/main.png" class="w-full object-cover aspect-square md:aspect-video">
+        </div>
+
+        <div class="py-10 md:py-20">
+            <div class="flex items-center space-x-2 overflow-y-auto">
+                <img src="/assets/imgs/collection/autumn-winter/1.png" class="min-w-[200px]" >
+                <img src="/assets/imgs/collection/autumn-winter/2.png" class="min-w-[200px]" >
+                <img src="/assets/imgs/collection/autumn-winter/3.png" class="min-w-[200px]" >
+                <img src="/assets/imgs/collection/autumn-winter/4.png" class="min-w-[200px]" >
+            </div>
+        </div>
+
+        <div class="py-10">
+            <div class="grid grid-cols-2 gap-2">
+                <img src="/assets/imgs/collection/autumn-winter/5.png" class="object-cover min-h-[400px]">
+                <img src="/assets/imgs/collection/autumn-winter/6.png" class="object-cover min-h-[400px]">
+            </div>
+        </div>
+
+        <div class="py-10 md:py-20">
+            <div class="flex items-center space-x-2 overflow-y-auto">
+                <img src="/assets/imgs/collection/autumn-winter/7.png" class="min-w-[200px]" >
+                <img src="/assets/imgs/collection/autumn-winter/8.png" class="min-w-[200px]" >
+                <img src="/assets/imgs/collection/autumn-winter/9.png" class="min-w-[200px]" >
+                <img src="/assets/imgs/collection/autumn-winter/10.png" class="min-w-[200px]" >
+            </div>
+        </div>
+
+        <div class="py-10">
+            <img src="/assets/imgs/collection/autumn-winter/11.png" class="object-cover" >
+        </div>
+    </main>
+
+    <footer class="bg-black py-8 mt-auto">
+        <div class="container-sm">
+            <div class="flex flex-wrap items-start justify-between">
+                <div>
+                    <a class="font-mont text-2xl text-white">NURSHAH</a>
+                    <div class="md:hidden flex flex-col items-start space-y-3 py-2 mt-4">
+                        <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Коллекции</a>
+                        <div class="relative">
+                            <div id="dropdown-mob" class="font-mont text-sm text-gray-100 hover:underline hover:cursor-pointer">О компании</div>
+                            <div id="content-mob" class="hidden absolute top-6 w-32 bg-white rounded-[10px] shadow z-20 px-4 py-3">
+                                <div class="flex flex-col space-y-3">
+                                    <a href="/about-brand.html" class="font-mont text-gray-600 text-sm hover:underline hover:cursor-pointer">Бренд</a>
+                                    <a href="/about-designer.html" class="font-mont text-gray-600 text-sm hover:underline hover:cursor-pointer">Дизайнер</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                        <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Контакты</a>
+                    </div>
+                </div>
+               
+                <div class="hidden md:flex items-center space-x-10 py-2">
+                    <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Коллекции</a>
+                    <div class="relative">
+                        <div id="dropdown-footer" class="font-mont text-sm text-gray-100 hover:underline hover:cursor-pointer">О компании</div>
+                        <div id="content-footer" class="hidden absolute top-4 w-48 bg-transparent rounded-[10px] shadow z-20 py-3">
+                            <div class="flex flex-col space-y-3">
+                                <a href="/about-brand.html" class="font-mont text-gray-100 text-xs hover:underline hover:cursor-pointer">Бренд</a>
+                                <a href="/about-designer.html" class="font-mont text-gray-100 text-xs hover:underline hover:cursor-pointer">Дизайнер</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                    <a class="font-mont text-gray-100 text-sm hover:underline hover:cursor-pointer">Контакты</a>
+                </div>
+                <div class="flex flex-col space-y-3 items-end py-2">
+                    <a class="text-gray-200 text-sm font-mont" href="mailto:nur-shah@mail.ru">nur-shah@mail.ru</a>
+                    <a class="text-gray-200 text-sm font-mont" href="tel:+77775995477">+7 777 599 54 77</a>
+                    <div class="flex items-center space-x-3">
+                        <a>
+                            <img src="./assets/icons/instagram.svg" width="20">
+                        </a>
+                        <a>
+                            <img src="./assets/icons/whatsapp.svg" width="20">
+                        </a>
+                        <a>
+                            <img src="./assets/icons/telegram.svg" width="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="mobile-menu" class="absolute z-30 top-0 left-0 bg-white">
+        <div class="flex flex-col space-y-4 container-sm relative h-full">
+            <div class="flex items-center justify-between py-8">
+                <a href="/index.html" class="font-mont text-gray-800 text-2xl hover:cursor-pointer font-semibold">
+                    NURSHAH
+                </a>
+                <button onclick="toggleMenu()">
+                    <img src="/assets/icons/close.svg" width="40">
+                </button>
+            </div>
+            
+            <div class="py-4">
+                <div class="flex flex-col space-y-8">
+                    <a href="/collection.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Коллекции</a>
+                    <div class="relative">
+                        <div id="dropdown-menu" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">О компании</div>
+                        <div id="content-menu" class="hidden absolute top-8 w-48 bg-white rounded-[10px] shadow z-20 px-4 py-3">
+                            <div class="flex flex-col space-y-3">
+                                <a href="/about-brand.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Бренд</a>
+                                <a href="/about-designer.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Дизайнер</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/pret-a-porter.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Pret-a-porter</a>
+                    <a href="/contact.html" class="font-mont text-gray-600 hover:underline hover:cursor-pointer">Контакты</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3 justify-end py-2 mt-auto">
+                <a class="text-gray-700 text-sm font-mont" href="mailto:nur-shah@mail.ru">nur-shah@mail.ru</a>
+                <a class="text-gray-700 text-sm font-mont" href="tel:+77775995477">+7 777 599 54 77</a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
