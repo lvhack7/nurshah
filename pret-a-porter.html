@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen flex flex-col">
-    <header class="flex container-sm bg-white w-full">
-        <nav class="flex w-full justify-between md:flex-col items-center md:justify-center py-4 md:py-0">
+    <header class="fixed top-0 left-0 bg-white w-full z-30 shadow-sm w-full">
+        <nav class="container-sm flex justify-between md:flex-col items-center md:justify-center py-4 md:py-0">
             <div class="hidden md:flex justify-end w-full border-b border-gray-400 py-2">
                 <div class="flex items-center space-x-1">
                     <a class="text-sm font-mont underline text-gray-700 hover:text-blue-800 hover:cursor-pointer">RU</a>
@@ -54,24 +54,32 @@
             </div>
         </nav>
     </header>
-    <main class="pt-10 pb-20">
+    <main class="py-20">
         <div class="relative">
             <img src="/assets/imgs/collection/porter/main.png" class="w-full object-cover">
         </div>
 
         <div class="py-10 md:py-20">
-            <div class="flex items-center space-x-2 overflow-y-auto">
-                <img src="/assets/imgs/collection/porter/1.png" class="min-w-[200px]" >
-                <img src="/assets/imgs/collection/porter/2.png" class="min-w-[200px]" >
-                <img src="/assets/imgs/collection/porter/3.png" class="min-w-[200px]" >
-                <img src="/assets/imgs/collection/porter/4.png" class="min-w-[200px]" >
+            <div class="flex items-start space-x-2 overflow-x-auto">
+                <div class="min-w-[200px] h-full">
+                    <img src="/assets/imgs/collection/porter/1.png" class="w-full h-full object-cover" alt="Image 1">
+                </div>
+                <div class="min-w-[200px] h-full">
+                    <img src="/assets/imgs/collection/porter/2.png" class="w-full h-full object-cover" alt="Image 2">
+                </div>
+                <div class="min-w-[200px] h-full">
+                    <img src="/assets/imgs/collection/porter/3.png" class="w-full h-full object-cover" alt="Image 3">
+                </div>
+                <div class="min-w-[200px] h-full">
+                    <img src="/assets/imgs/collection/porter/4.png" class="w-full h-full object-cover" alt="Image 4">
+                </div>
             </div>
         </div>
 
-        <div class="py-10">
+        <div class="">
             <div class="grid grid-cols-2 gap-2">
-                <img src="/assets/imgs/collection/porter/5.png" class="object-cover min-h-[400px]">
-                <img src="/assets/imgs/collection/porter/6.png" class="object-cover min-h-[400px]">
+                <img src="/assets/imgs/collection/porter/5.png" class="w-full h-full">
+                <img src="/assets/imgs/collection/porter/6.png" class="w-full h-full">
             </div>
         </div>
 
@@ -88,7 +96,7 @@
             <img src="/assets/imgs/collection/porter/11.png" class="object-cover" >
         </div>
 
-        <div class="py-10">
+        <div>
             <div class="grid grid-cols-2 gap-2">
                 <img src="/assets/imgs/collection/porter/12.png" class="object-cover min-h-[400px]">
                 <img src="/assets/imgs/collection/porter/13.png" class="object-cover min-h-[400px]">
