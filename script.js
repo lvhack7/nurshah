@@ -56,7 +56,6 @@ function toggleMenu() {
     var body = document.body
 
     if(mobileMenu.style.height === '0px') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
         mobileMenu.style.height = '100vh'
     } else {
         mobileMenu.style.height = '0px'

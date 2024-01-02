@@ -45,6 +45,25 @@
     transition: height 0.5s ease-in-out;
 }
 
+.tab {
+    position: relative;
+    display: inline-block;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+/* Show the dropdown content when hovering over the tab */
+.tab:hover .dropdown-content {
+    display: block;
+}
 
 .container-sm {
     padding-right: 15px;
